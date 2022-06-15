@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+.contenedor {
+    width: 99%;
+    margin: 5px auto;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: (3, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+        "header header header"
+        "inicio inicio aside"
+        "galeria galeria galeria"
+        "formulario formulario formulario"
+        "footer footer footer"
+}
+
+.contenedor2 {
+    padding: 1.5rem;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    grid-area: header;
+    background-color: #BCB8B1;
+}
+
+.imgppal {
+    width: 90px;
+    display: flex;
+    flex-direction: row;
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu ul li {
+    margin: 1rem 1rem;
+    color: white;
+}
+
+.inicio {
+    grid-area: inicio;
+    background-color: #BCB8B1;
+}
+
+.inicio ul {
+    grid-area: inicio;
+    background-color: #BCB8B1;
+        display: flex;
+    flex-direction: row;
+}
+
+.imageninicio {
+    width: 100%;
+}
+
+.aside {
+    grid-area: aside;
+    background-image: url(../Imagenes/S1\ INCICIO\ 2\ 2020-07-28\ 12.20.43.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.galeria {
+    grid-area: galeria;
+    background-color: #BCB8B1;
+    display: flex;
+    flex-direction: row;
+}
+
+.imgaleria {
+    width: 33.33%;
+    padding: 5px;
+}
+
+.formulario {
+    grid-area: formulario;
+    background-color: #BCB8B1;
+    padding: 10px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: (2, 1fr);
+    grid-template-areas: "mapa form"
+}
+
+.mapa {
+    grid-area: mapa;
+}
+
+.contform {
+    grid-area: form;
+}
+
+.bloqueformulario {
+    width: 100%;
+}
+
+.formulariocontrol {
+    background-color: #F4F3EE;
+    border: 2px solid #8EDFC0;
+    width: 100%;
+    padding: 5px;
+}
+
+.formulariocontrol2 {
+    background-color: #F4F3EE;
+    border: 2px solid #8EDFC0;
+    width: 100%;
+    padding: 5px;
+    resize: none;
+}
+
+::placeholder {
+    color: #8EDFC0;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #BCB8B1;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: (3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+        "logo texto texto"
+        "logo findme socialmedia"
+}
+
+.imgppalfooter {
+    width: 150px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    grid-area: logo;
+    margin-right: 20px;
+}
+
+.texto {
+    grid-area: texto;
+    padding: 5px;
+}
+
+.findme {
+    grid-area: findme;
+    padding: 5px;
+}
+
+.socialmedia {
+    grid-area: socialmedia;
+    padding: 5px;
+}
+
+/* ---->PAG WORK<----- */
+
+.contenedorwork {
+    width: 99%;
+    margin: 5px auto;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: (3, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+        "header header header"
+        "titulo titulo titulo"
+        "werk pics pics"
+        "fees fees fees"
+        "footer footer footer"
+}
+
+.titulo {
+    grid-area: titulo;
+    padding: 5px;
+    background-color: #8EDFC0;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.table {
+    grid-area: fees;
+    padding: 5px;
+    background-color: #BCB8B1;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+}
+
+.tabla {
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    align-content: center;
+}
+
+.werk {
+    grid-area: werk;
+    padding: 5px;
+}
+
+.gallwerk {
+    grid-area: pics;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.trabajos {
+    width: 49.5%;
+}
+
+/* PAG ABOUT ME */
+.contABOUT {
+    width: 99%;
+    margin: 5px auto;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: (3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+        "header header header"
+        "titulo titulo titulo"
+        "about video video"
+        "footer footer footer"
+}
+
+.titulo {
+    grid-area: titulo;
+    padding: 5px;
+    background-color: #8EDFC0;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.contenidopagina {
+    display: flex;
+    flex-direction: row;
+}
+
+.aboutme {
+    grid-area: about;
+    padding: 5px;
+}
+
+.video {
+    grid-area: video;
+    padding: 5px;
+    width: 66.66%;
+}
+
+/* PAG CONTACT */
+
+.contenedorcontact {
+    width: 99%;
+    margin: 5px auto;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: (3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+        "header header header"
+        "titulo titulo titulo"
+        "formulario formulario formulario"
+        "footer footer footer"
+}
+
+/* PAG SHOP */
+
+.contenedorshop {
+    width: 99%;
+    margin: 5px auto;
+       }
+
+.categorias {
+    grid-area: categorias;
+    padding: 5px;
+}
+
+.categorias ul {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.categorias ul {
+    margin: 1rem 1rem;
+    color: white;
+}
+
+
+.contshop{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: (3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+    "inicio galeria galeria"
+    "form galeria galeria"
+   }
+
